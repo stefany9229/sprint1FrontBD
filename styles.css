@@ -93,7 +93,7 @@ header {
 }
 
 p.titulo2 {
-    font-weight: bold; /* Hace que el texto esté en negritas */
-    margin: 20px; /* Añade un margen de 20px en todos los lados */
-    font-size: 20px; /* Establece el tamaño de fuente a 16px (ajusta según tus preferencias) */
+    font-weight: bold; 
+    margin: 20px; 
+    font-size: 20px; 
   }
