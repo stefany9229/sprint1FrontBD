@@ -1,46 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="es"> <!-- Agrega el atributo lang para especificar el idioma -->
 <head>
+    <meta charset="UTF-8"> <!-- Especifica la codificación de caracteres para el contenido -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que tu página sea responsive -->
     <title>Contacto Profesional</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Detalle del Proyecto Booking </h1>
-        <main>
-            <div class="section">
-                <h2>Descripción del Proyecto</h2>
-                <p>Este proyecto proporciona una plataforma para reservar servicios técnicos de manera fácil y eficiente. Usuarios pueden buscar servicios específicos, ver disponibilidad y agendar citas en línea.</p>
-            </div>
-    
-            <div class="section">
-                <h2>Características</h2>
-                <ul>
-                    <li>Búsqueda de servicios por categoría y ubicación</li>
-                    <li>Calendario para seleccionar fechas y horarios disponibles</li>
-                    <li>Registro y autenticación de usuarios</li>
-                    <li>Sistema de valoraciones y comentarios</li>
-                </ul>
-            </div>
-    
-            <div class="section">
-                <h2>Cómo Funciona</h2>
-                <p>Los usuarios se registran en la plataforma, buscan el servicio técnico que necesitan, seleccionan una fecha y hora, y confirman su reserva. Los proveedores del servicio recibirán la reserva y podrán gestionarla a través de su panel de control.</p>
-            </div>
-    
-            <div class="contact-form">
-                <h2>Contacta con Nosotros</h2>
-                <form action="#" method="post">
-                    <input type="text" id="name" name="user_name" placeholder="Tu Nombre">
-                    <input type="email" id="email" name="user_email" placeholder="Tu Email">
-                    <textarea id="message" name="user_message" placeholder="Tu Mensaje"></textarea>
-                    <input type="submit" value="Enviar Mensaje">
-                </form>
-            </div>
-        </main>
+        <h1>Proyectos</h1>
+    </header>
+    <main> <!-- El elemento <main> debe estar fuera del <header> -->
+        <div id="contenedorProyectos"></div>
+               
+        <section class="contact-form"> <!-- Otra <section> para el formulario de contacto -->
+            <h2>Contacta con Nosotros</h2>
+            <form action="#" method="post">
+                <input type="text" id="name" name="user_name" placeholder="Tu Nombre" required> <!-- Agrega el atributo required para la validación del formulario -->
+                <input type="email" id="email" name="user_email" placeholder="Tu Email" required>
+                <textarea id="message" name="user_message" placeholder="Tu Mensaje" required></textarea>
+                <input type="submit" value="Enviar Mensaje">
+            </form>
+        </section>
+    </main>
     <footer>
         <a href="index.html">Volver a Mi Portafolio</a>
     </footer>
+    <script src="detalle-proyecto.js"></script>
 </body>
-
 </html>
+
